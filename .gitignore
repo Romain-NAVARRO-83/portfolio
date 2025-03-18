@@ -1,0 +1,55 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+debug.log*
+pm2.log*
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+
+# Sequelize migrations and seeders (optional, if generated files should be ignored)
+config/config.json
+migrations/
+seeders/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+docker-compose.yml
+Dockerfile
+docker-*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ESLint & Prettier
+.eslintcache
+*.eslintcache
+.prettierignore
+
+# Build files
+dist/
+build/
+coverage/
