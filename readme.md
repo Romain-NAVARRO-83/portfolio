@@ -8,6 +8,9 @@ npx sequelize-cli db:migrate
 npx sequelize-cli db:migrate --config config/config.mjs
 npx sequelize-cli db:seed:all --config config/config.mjs
 
+npx sequelize-cli db:migrate:undo:all --config config/config.mjs
+
+
 
 ## Prune
 docker system prune -a --volumes

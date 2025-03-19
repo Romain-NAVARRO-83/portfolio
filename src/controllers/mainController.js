@@ -1,13 +1,15 @@
 import db from "../../models/index.js";
 
-const { Project } = db;
+const { Project, Technology } = db;
 
 const mainController = {
   homePage: async (req, res) => {
     try {
       // Fetch all projects from the database
       const projects = await Project.findAll();
-      res.render("index", { title: "Portfolio", projects });
+      const technos = await Technology.findAll();
+      console.log(`Technologies : ${JSON.stringify(technos)} | Projets : ${JSON.stringify(projects)}`)
+      res.render("index", { title: "Portfolio", projects, technos });
     } catch (error) {
       console.error("Error fetching projects:", error);
       res.status(500).send("Internal Server Error");
