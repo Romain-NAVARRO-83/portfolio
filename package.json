@@ -8,7 +8,8 @@
     "dev": "nodemon src/index.js",
     "start": "node src/index.js",
     "sequelize": "npx sequelize-cli",
-    "db:reset": "npx sequelize-cli db:migrate:undo:all --config config/config.mjs && npx sequelize-cli db:migrate --config config/config.mjs && npx sequelize-cli db:seed:all --config config/config.mjs"
+    "db:reset": "npx sequelize-cli db:migrate:undo:all --config config/config.mjs && npx sequelize-cli db:migrate --config config/config.mjs && npx sequelize-cli db:seed:all --config config/config.mjs",
+    "seed": "NODE_OPTIONS='--loader ts-node/esm' npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
