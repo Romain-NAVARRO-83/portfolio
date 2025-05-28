@@ -1,8 +1,8 @@
 const projects = [
   {
     id: '1',
-    title: 'Project One',
-    subtitle: 'A brief overview of Project One',
+    title: 'Inside',
+    subtitle: 'Interface de gestion sur mesure',
     shortDescription: 'This project is about...',
     longDescription: 'This project involves a detailed explanation of...',
     images: [
@@ -14,8 +14,8 @@ const projects = [
   },
   {
     id: '2',
-    title: 'Project Two',
-    subtitle: 'A brief overview of Project Two',
+    title: 'Gemstore',
+    subtitle: 'Application e-commerce de bout en bout',
     shortDescription: 'This project is about...',
     longDescription: 'This project involves a detailed explanation of...',
     images: [
@@ -27,8 +27,20 @@ const projects = [
   },
   {
     id: '3',
-    title: 'Project Three',
-    subtitle: 'A brief overview of Project Three',
+    title: 'Pet Foster',
+    subtitle: 'Application de gestion des animaux de compagnie',
+    shortDescription: 'This project is about...',
+    longDescription: 'This project involves a detailed explanation of...',
+    images: [
+      '/images/projects/petfoster/petfoster-1.png',
+      '/images/project-three-image2.jpg',
+    ],
+    video: '/videos/project-three-video.mp4',
+    techStack: ['Vue.js', 'Firebase', 'CSS'],
+  }, {
+    id: '4',
+    title: 'Stock Exporter',
+    subtitle: 'Module Prestashop d\'import d\'état des stocks',
     shortDescription: 'This project is about...',
     longDescription: 'This project involves a detailed explanation of...',
     images: [
@@ -36,7 +48,20 @@ const projects = [
       '/images/project-three-image2.jpg',
     ],
     video: '/videos/project-three-video.mp4',
-    techStack: ['Vue.js', 'Firebase', 'CSS'],
+    techStack: ['Smarty', 'Php'],
+  },
+  {
+    id: '4',
+    title: 'Mother Must Prevail',
+    subtitle: 'Tower defense revisité',
+    shortDescription: 'This project is about...',
+    longDescription: 'This project involves a detailed explanation of...',
+    images: [
+      '/images/project-three-image1.jpg',
+      '/images/project-three-image2.jpg',
+    ],
+    video: '/videos/project-three-video.mp4',
+    techStack: ['Construct'],
   },
 ];
 

@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import projectsData from '../data/projects';
+import Gallery from './Gallery';
 
 const Portfolio: React.FC = () => {
     return (
         <section>
-            <div className="container">
+            <Gallery />
+            {/* <div className="container">
                 <h2 className="title">Portfolio</h2>
                 <div className="columns is-multiline">
                     {projectsData.map((project) => (
@@ -28,7 +30,7 @@ const Portfolio: React.FC = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

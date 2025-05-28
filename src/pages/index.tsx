@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import 'fullpage.js/dist/fullpage.min.css';
+// import 'fullpage.js/dist/fullpage.min.css';
+// import 'styles/gallery.css'; // Assuming you have a CSS file for the gallery styles
 
 import Welcome from '../components/Welcome';
 import ServicesSkills from '../components/ServicesSkills';
