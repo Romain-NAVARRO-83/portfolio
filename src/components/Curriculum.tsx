@@ -1,0 +1,34 @@
+import React from 'react';
+import profileData from '../data/profile';
+
+const Curriculum: React.FC = () => {
+    return (
+        <section>
+            <div className="container">
+                <h2 className="title">Curriculum Vitae</h2>
+                <h3 className="subtitle">Parcours Professionnel et Académique</h3>
+                <div className="content">
+                    <h4>Formation</h4>
+                    <ul>
+                        {profileData.education.map((edu, index) => (
+                            <li key={index}>
+                                <strong>{edu.degree}</strong> - {edu.institution} ({edu.year})
+                            </li>
+                        ))}
+                    </ul>
+                    <h4>Expérience Professionnelle</h4>
+                    <ul>
+                        {profileData.experience.map((exp, index) => (
+                            <li key={index}>
+                                <strong>{exp.position}</strong> - {exp.company} ({exp.year})
+                                <p>{exp.description}</p>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Curriculum;

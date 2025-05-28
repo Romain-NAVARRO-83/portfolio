@@ -1,0 +1,31 @@
+{
+  "name": "romain-navarro-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Romain Navarro, a web developer.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "bulma": "latest",
+    "fullpage.js": "^4.0.35",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "typescript": "latest"
+  },
+  "keywords": [
+    "portfolio",
+    "web developer",
+    "nextjs",
+    "bulma"
+  ],
+  "author": "Romain Navarro",
+  "license": "MIT"
+}
