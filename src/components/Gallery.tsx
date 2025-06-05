@@ -24,10 +24,12 @@ const Gallery: React.FC = () => {
     return (
         <div className="desktop_7" unique-script-id="w-w-dm-id">
             <div className="responsive-container-block bigContainer">
+                <svg className="triangle1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <polygon points="0,0 100,0 100,100" fill="#f0f0f0" />
+                </svg>
                 <div className="responsive-container-block Container">
-                    <p className="text-blk headingText">
-                        Projets
-                    </p>
+
+
                     <div className="responsive-container-block optionsContainer">
                         {filters.map((filter, idx) => (
                             <p

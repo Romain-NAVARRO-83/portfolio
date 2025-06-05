@@ -1,0 +1,162 @@
+:root {
+    --mainflex: 8%;
+    --mainpadding: 1rem;
+}
+
+.nano {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nano>* {
+    flex-grow: 2;
+    flex-basis: 100%;
+}
+
+
+.s5 {
+    flex-basis: calc(var(--mainflex) * 5);
+}
+
+.s6 {
+    flex-basis: calc(var(--mainflex) * 6);
+}
+
+.s7 {
+    flex-basis: calc(var(--mainflex) * 7);
+}
+
+.s8 {
+    flex-basis: calc(var(--mainflex) * 8);
+}
+
+.s9 {
+    flex-basis: calc(var(--mainflex) * 9);
+}
+
+.s10 {
+    flex-basis: calc(var(--mainflex) * 10);
+}
+
+.s11 {
+    flex-basis: calc(var(--mainflex) * 11);
+}
+
+.s12 {
+    flex-basis: calc(var(--mainflex) * 12);
+}
+
+/* Medium (tablette) */
+@media (min-width: 600px) {
+    .m1 {
+        flex-basis: calc(var(--mainflex) * 1);
+    }
+
+    .m2 {
+        flex-basis: calc(var(--mainflex) * 2);
+    }
+
+    .m3 {
+        flex-basis: calc(var(--mainflex) * 3);
+    }
+
+    .m4 {
+        flex-basis: calc(var(--mainflex) * 4);
+    }
+
+    .m5 {
+        flex-basis: calc(var(--mainflex) * 5);
+    }
+
+    .m6 {
+        flex-basis: calc(var(--mainflex) * 6);
+    }
+
+    .m7 {
+        flex-basis: calc(var(--mainflex) * 7);
+    }
+
+    .m8 {
+        flex-basis: calc(var(--mainflex) * 8);
+    }
+
+    .m9 {
+        flex-basis: calc(var(--mainflex) * 9);
+    }
+
+    .m10 {
+        flex-basis: calc(var(--mainflex) * 10);
+    }
+
+    .m11 {
+        flex-basis: calc(var(--mainflex) * 11);
+    }
+
+    .m12 {
+        flex-basis: calc(var(--mainflex) * 12);
+    }
+}
+
+/* Large (desktop) */
+@media (min-width: 1024px) {
+    .l1 {
+        flex-basis: calc(var(--mainflex) * 1);
+    }
+
+    .l2 {
+        flex-basis: calc(var(--mainflex) * 2);
+    }
+
+    .l3 {
+        flex-basis: calc(var(--mainflex) * 3);
+    }
+
+    .l4 {
+        flex-basis: calc(var(--mainflex) * 4);
+    }
+
+    .l5 {
+        flex-basis: calc(var(--mainflex) * 5);
+    }
+
+    .l6 {
+        flex-basis: calc(var(--mainflex) * 6);
+    }
+
+    .l7 {
+        flex-basis: calc(var(--mainflex) * 7);
+    }
+
+    .l8 {
+        flex-basis: calc(var(--mainflex) * 8);
+    }
+
+    .l9 {
+        flex-basis: calc(var(--mainflex) * 9);
+    }
+
+    .l10 {
+        flex-basis: calc(var(--mainflex) * 10);
+    }
+
+    .l11 {
+        flex-basis: calc(var(--mainflex) * 11);
+    }
+
+    .l12 {
+        flex-basis: calc(var(--mainflex) * 12);
+    }
+}
+
+.pad {
+    padding: var(--mainpadding);
+}
+
+.padh {
+    padding: 0 var(--mainpadding);
+}
+
+.padv {
+    padding: var(--mainpadding) 0;
+}

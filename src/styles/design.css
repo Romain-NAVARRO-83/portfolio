@@ -1,0 +1,14 @@
+.fp-section h2 {
+    background-color: #f0f0f0;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    padding: var(--mainpadding);
+}
+
+.triangle1 {
+    width: 100%;
+    height: 50px;
+    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
+    /* transform: rotate(2deg); */
+}

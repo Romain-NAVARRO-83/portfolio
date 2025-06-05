@@ -15,33 +15,50 @@ const profile = {
   ],
   education: [
     {
-      degree: "Bachelor's Degree in Computer Science",
-      institution: "University of Technology",
-      year: 2020
+      degree: "Titre professionnel Développeur web et web mobile",
+      institution: "Ecole O'Clock",
+      year: 2024
     },
     {
-      degree: "Master's Degree in Web Development",
-      institution: "Institute of Advanced Studies",
-      year: 2022
+      degree: "Technicien supérieur en Infographie Multimédia",
+      institution: "ETPA",
+      year: 2006
+    },
+    {
+      degree: "DUT Information et communication des entreprises",
+      institution: "IUT Paul Sabatier",
+      year: 2003
     }
   ],
   experience: [
     {
-      position: "Frontend Developer",
-      company: "Tech Solutions",
-      year: "2021 - Present",
+      position: "Developpeur Web",
+      company: "Consogarage",
+      year: "2024 - Present",
       description: "Developing user-friendly web applications using React and Next.js."
     },
     {
-      position: "Intern Web Developer",
-      company: "Creative Agency",
-      year: "2020 - 2021",
+      position: "Webmaster",
+      company: "Consogarage",
+      year: "2017 - 2024",
+      description: "Assisted in the development of client websites and applications."
+    },
+    {
+      position: "Graphiste Intégrateur web",
+      company: "Freelance",
+      year: "2014 - 2017",
+      description: "Assisted in the development of client websites and applications."
+    },
+    {
+      position: "Webmaster",
+      company: "Bacat&aacute;",
+      year: "2010 - 2014",
       description: "Assisted in the development of client websites and applications."
     }
   ],
   contact: {
-    email: "romain.navarro@example.com",
-    phone: "+1234567890",
+    email: "navarro.romain@gmail.com",
+    phone: "+33698937274",
     linkedin: "https://www.linkedin.com/in/romain-navarro",
     github: "https://github.com/romainnavarro"
   }

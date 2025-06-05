@@ -1,9 +1,16 @@
 /* COLOR HUNT : https://colorhunt.co/palette/0e2148483aa07965c1e3d095 */
+:root {
+    --primary-color: #0E2148;
+    --secondary-color: #483AA0;
+    --accent-color: #7965C1;
+    --background-color: #E3D095;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #0E2148
+    background-color: #fff
 }
 
 h1,
