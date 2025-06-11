@@ -1,14 +1,88 @@
-.fp-section h2 {
-    background-color: #f0f0f0;
-    /* position: absolute; */
+.darkline {
+    background-color: #333;
     top: 0;
     left: 0;
     padding: var(--mainpadding);
+    margin: 0;
 }
 
 .triangle1 {
     width: 100%;
     height: 50px;
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
-    /* transform: rotate(2deg); */
+}
+
+.triangle2 {
+    width: 100%;
+    height: 50px;
+    filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.1));
+}
+
+div[data-anchor="curriculum"] ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.experiencelist li {
+    border-left: solid 3px var(--background-color);
+    padding-left: 30px;
+    margin-bottom: 30px
+}
+
+form[action="/sendmail"] {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+}
+
+div:has(>form[action="/sendmail"]) {
+    text-align: center;
+}
+
+/* div#contact .content {
+    align-self: stretch;
+
+}
+ */
+div#contact .content>div:first-child {
+    background-color: var(--light-color);
+}
+
+div#contact .content>div:first-child::after {
+    content: '';
+    /* background-image: url('<svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">            <polygon points="0,0 100,0 100,100" fill="#f0f0f0" /></svg>'); */
+    width: 100%;
+    height: 100px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' viewBox='0 0 100 100' preserveAspectRatio='none'><polygon points='0,0 100,0 100,100' fill='%23f0f0f0' /></svg>");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 99;
+}
+
+div#contact>section {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+
+}
+
+div#contact .content {
+    flex-grow: 2;
+    /* align-items: center; */
+}
+
+div#contact .content>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact li {
+    list-style-type: none;
+    margin-bottom: var(--mainpadding)
 }

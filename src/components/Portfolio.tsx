@@ -6,7 +6,7 @@ import Gallery from './Gallery';
 const Portfolio: React.FC = () => {
     return (
         <section>
-            <h2>Projets</h2>
+
             <Gallery />
             {/* <div className="container">
                 <h2 className="title">Portfolio</h2>

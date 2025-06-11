@@ -33,18 +33,20 @@
 
 .desktop_7 .responsive-container-block.bigContainer {
     padding: 0;
+    width: 90%;
 }
 
 .desktop_7 .responsive-container-block.Container {
     max-width: 90%;
+    width: 90%;
     flex-direction: column;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     padding-right: 0px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     padding-left: 0px;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-right: auto;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     margin-left: auto;
 }
 
@@ -110,16 +112,16 @@
     flex-wrap: wrap;
     padding: 10px;
     gap: 20px;
-    border-color: #7965C1;
-    border-width: 10px 0;
-    border-style: solid;
-    background-color: transparent;
+    /* border-color: #7965C1;
+border-width: 10px 0;
+border-style: solid;
+background-color: transparent; */
 }
 
 .desktop_7 .responsive-container-block.optionsContainer {
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     margin-left: 0px;
     min-height: auto;
 }

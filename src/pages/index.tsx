@@ -29,7 +29,7 @@ const HomePage = () => {
                     sectionSelector: '.section',
                     navigationTooltips: ['Accueil', 'Services', 'Portfolio', 'CV', 'Contact'],
                     showActiveTooltip: true,
-                    scrollOverflow: true,
+                    scrollOverflow: false,
                 });
             });
         }
@@ -45,8 +45,8 @@ const HomePage = () => {
             <div className="section"><Welcome /></div>
             <div className="section"><ServicesSkills /></div>
             <div className="section"><Portfolio /></div>
-            <div className="section"><Curriculum /></div>
-            <div className="section"><Contact /></div>
+            <div className="section" id="cv"><Curriculum /></div>
+            <div className="section" id='contact'><Contact /></div>
         </div>
     );
 };

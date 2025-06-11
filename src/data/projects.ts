@@ -19,7 +19,7 @@ const projects = [
     shortDescription: 'This project is about...',
     longDescription: 'This project involves a detailed explanation of...',
     images: [
-      '/images/project-two-image1.jpg',
+      '/images/projects/gemstore/gemstore_video_cover.jpeg',
       '/images/project-two-image2.jpg',
     ],
     video: '/videos/project-two-video.mp4',

@@ -4,6 +4,7 @@
     --secondary-color: #483AA0;
     --accent-color: #7965C1;
     --background-color: #E3D095;
+    --light-color: #fff7dd;
 }
 
 body {
@@ -35,7 +36,7 @@ a {
 }
 
 .section {
-    padding: 40px 0;
+    padding: 0 0;
 }
 
 .is-hidden {
@@ -70,4 +71,121 @@ a {
 .image {
     max-width: 100%;
     height: auto;
+}
+
+.fp-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Basic Reset and Font */
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    margin: 2rem;
+    color: #212529;
+}
+
+*/
+/* Form Wrapper */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Inputs, Textareas, Selects */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    background-color: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 1rem;
+}
+
+/* Focus State */
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+/* Checkbox and Radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 0.5rem;
+    accent-color: #0d6efd;
+}
+
+/* Disabled Elements */
+input:disabled,
+textarea:disabled,
+select:disabled {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+/* Responsive Helpers */
+@media (max-width: 576px) {
+    form {
+        padding: 1rem;
+    }
+}
+
+p.lead {
+    color: var(--accent-color);
+    font-size: 1.2em;
 }

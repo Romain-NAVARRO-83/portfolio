@@ -160,3 +160,7 @@
 .padv {
     padding: var(--mainpadding) 0;
 }
+
+.gap {
+    gap: var(--mainpadding);
+}

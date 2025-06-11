@@ -18,10 +18,10 @@ interface ProjectDetailProps {
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
     return (
         <>
-            <div className="project-detail container">
-                <h1>{project.title}</h1>
-                <h2>{project.subtitle}</h2>
-                <p>{project.shortDescription}</p>
+            <div className="project-detail nano">
+                <div className='l6'><h1>{project.title}</h1>
+                    <h2>{project.subtitle}</h2></div>
+                <div className="shortDescription">{project.shortDescription}</div>
                 <div>{project.longDescription}</div>
                 <div className="media">
                     {project.images && project.images.map((src, index) => (
