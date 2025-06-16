@@ -127,8 +127,8 @@ background-color: transparent; */
 }
 
 .desktop_7 .project {
-    display: inline-block;
-    margin-top: 0px;
+    /* display: inline-block; */
+    /* margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 20px;
     margin-left: 0px;
@@ -136,7 +136,7 @@ background-color: transparent; */
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
-    background-color: #ddd;
+    background-color: #ddd; */
     aspect-ratio: 3/1;
 
 }
@@ -583,7 +583,7 @@ background-color: transparent; */
 #gallery .project {
     background-size: cover;
     background-position: center;
-    background-color: #E3D095;
+    /* background-color: #E3D095; */
 }
 
 @media (min-width:800px) {

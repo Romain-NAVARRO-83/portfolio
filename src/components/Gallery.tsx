@@ -26,11 +26,12 @@ const Gallery: React.FC = () => {
         <>
             <div>
                 <h2 className='darkline'>Projets</h2>
-                <div className="responsive-container-block optionsContainer darkline">
+                <Triangle />
+                <div className="responsive-container-block optionsContainer colorline">
                     {filters.map((filter, idx) => (
                         <button
                             key={filter.value}
-                            className={`text-blk list${activeFilter === filter.value ? ' active' : ''}`}
+                            className={`${activeFilter === filter.value ? ' active' : ''}`}
                             data-filter={filter.value}
                             onClick={() => setActiveFilter(filter.value)}
                         >
@@ -39,6 +40,7 @@ const Gallery: React.FC = () => {
                     ))}
                 </div>
                 <Triangle />
+
 
             </div>
             <div className="desktop_7" unique-script-id="w-w-dm-id">
@@ -51,16 +53,24 @@ const Gallery: React.FC = () => {
 
 
 
-                        <div id="gallery" className="responsive-container-block imageContainer">
+                        <div id="gallery" className="responsive-container-block imageContainer nano">
                             {filteredProjects.map((project, idx) => (
-                                <div className="project" key={project.id} style={{ backgroundImage: `url(${project.images[0]})` }}>
-                                    {/* <img
-                                    className="squareImg"
-                                    src={project.images[0]}
-                                    alt={project.title}
-                                /> */}
+                                <div className="project nano s12 m6 l4" key={project.id} >
+                                    {<div className="s12 m4 l4"><img
+                                        className='project-thumbnail'
+                                        src={project.images[0]}
+                                        alt={project.title}
+                                    /></div>}
+                                    <div className="project-details s12 m8 l8 pad">
+                                        <h3 className='subtitle'>{project.title}</h3>
+                                        <h4>{project.subtitle}</h4>
+                                        <p>{project.shortDescription}</p>
+                                        {/* <div>
+                                            <strong>Stack :</strong> {project.techStack?.join(', ')}
+                                        </div> */}
+                                    </div>
                                     {/* Overlay */}
-                                    <h3 className="project-title subtitle">{project.title}</h3>
+
                                     <>
                                         {openOverlay === idx && (
                                             <div className="overlay">
@@ -71,14 +81,7 @@ const Gallery: React.FC = () => {
                                                     <div className="hdImgs">
                                                         <img className="againImg" src={project.images[0]} alt={project.title} />
                                                     </div>
-                                                    <div className="project-details">
-                                                        <h3>{project.title}</h3>
-                                                        <h4>{project.subtitle}</h4>
-                                                        <p>{project.shortDescription}</p>
-                                                        <div>
-                                                            <strong>Stack :</strong> {project.techStack?.join(', ')}
-                                                        </div>
-                                                    </div>
+
                                                 </div>
                                             </div>
                                         )}
@@ -98,7 +101,7 @@ const Gallery: React.FC = () => {
                 </div>
             </div >
             <svg className="triangle2" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <polygon points="0,0 100,100 0,100" fill="#f0f0f0" />
+                <polygon points="0,0 100,100 0,100" fill="#333" />
             </svg>
         </>
     );

@@ -12,6 +12,7 @@
 .nano>* {
     flex-grow: 2;
     flex-basis: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -163,4 +164,9 @@
 
 .gap {
     gap: var(--mainpadding);
+}
+
+.nano>*>img {
+    width: 100%;
+    height: auto;
 }

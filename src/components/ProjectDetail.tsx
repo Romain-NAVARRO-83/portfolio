@@ -1,4 +1,5 @@
 import React from 'react';
+import Triangle from './triangle';
 
 interface Project {
     id: string;
@@ -17,16 +18,17 @@ interface ProjectDetailProps {
 
 const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
     return (
-        <>
+        <><h1 className='darkline'>{project.title}</h1>
+            <Triangle />
+            <h2 className='colorline'>{project.subtitle}</h2 >
+            <Triangle />
             <div className="project-detail nano">
-                <div className='l6'><h1>{project.title}</h1>
-                    <h2>{project.subtitle}</h2></div>
-                <div className="shortDescription">{project.shortDescription}</div>
-                <div>{project.longDescription}</div>
-                <div className="media">
+                {/* <div className='l6'></div> */}
+
+                <div className="l6">
                     {project.images && project.images.map((src, index) => (
                         <div key={index}>
-                            <img src={src} alt={`${project.title} image ${index + 1}`} />
+                            <img src={src} alt={`${project.title} image ${index + 1}`} width="300" />
                         </div>
                     ))}
                     {project.video && (
@@ -38,12 +40,28 @@ const ProjectDetail: React.FC<ProjectDetailProps> = ({ project }) => {
                         </div>
                     )}
                 </div>
-                <div className='panel'>
-                    <h3 className='panel-heading'>Stack Technique </h3>
-                    {project.techStack.map((tech, index) => (
-                        <div className='panel-block' key={index}>{tech}</div>
-                    ))}
+                <div className='l6'>
+                    <div className="shortDescription">{project.shortDescription}</div>
+                    <div>{project.longDescription}</div>
+                    <div className='panel'>
+                        <h3 className='panel-heading'>Stack Technique </h3>
+                        <ul className='stack'>
+                            {project.techStack.map((tech, index) => (
+                                <li key={index} >
+                                    {tech === 'Next.js' ? (
+                                        <>  <img src="/images/vector/nextjs.svg" alt="Next.js" width="40" valign="middle" />
+                                            {tech}
+                                        </>
+
+                                    ) : (
+                                        tech
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
+
 
                 {/* <ul>
                 {project.techStack.map((tech, index) => (

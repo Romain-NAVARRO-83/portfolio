@@ -1,21 +1,75 @@
+@font-face {
+    font-family: 'titlefont';
+    src: url('/fonts/LuxiaDisplay.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'titlefont', sans-serif;
+}
+
 .darkline {
     background-color: #333;
     top: 0;
     left: 0;
     padding: var(--mainpadding);
     margin: 0;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #fff
+}
+
+h1.darkline,
+h2.darkline {
+    text-align: right;
+    text-transform: uppercase;
+    /* font-size: */
+}
+
+.colorline {
+    background-color: var(--secondary-color);
+    color: #fff
+}
+
+h2.colorline {
+    font-weight: lighter;
 }
 
 .triangle1 {
     width: 100%;
-    height: 50px;
+    height: 20px;
     filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.1));
+    /* margin-bottom: -100%; */
+}
+
+.triangle1+.colorline {
+    padding-top: 50px;
+    margin-top: -24px;
+
 }
 
 .triangle2 {
     width: 100%;
     height: 50px;
     filter: drop-shadow(0 -10px 5px rgba(0, 0, 0, 0.1));
+}
+
+.triangle1 polygon {
+    fill: var(--dark-color)
+}
+
+.colorline+.triangle1 polygon {
+    fill: var(--secondary-color);
+    /* transform: scaleX(-1); */
+}
+
+.colorline+.triangle1 {
+    transform: scaleX(-1);
 }
 
 div[data-anchor="curriculum"] ul {
@@ -85,4 +139,46 @@ div#contact .content>div {
 #contact li {
     list-style-type: none;
     margin-bottom: var(--mainpadding)
+}
+
+.optionsContainer button {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    font-weight: lighter;
+    border-left: solid 1px #fff;
+}
+
+div:has(>.project-thumbnail) {
+    background-color: var(--accent-color);
+}
+
+#gallery .project-thumbnail {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: soft-light;
+}
+
+.stack {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.stack li {
+    padding: 5px 10px;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 5px;
+}
+
+.stack li img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
 }
